@@ -1,6 +1,7 @@
 import "./styles.css";
 import FormTextInput from "./compontents/FormTextInput";
 import FormEmailInput from "./compontents/FormEmailInput";
+import FormSelectOption from "./compontents/FormSelectOption";
 import styled, { createGlobalStyle } from "styled-components";
 import { useState } from "react";
 
@@ -53,6 +54,9 @@ export default function App() {
           placeholder="Enter your email"
           setEmail={setEmail}
         />
+      </StyledForm>
+      <StyledForm>
+        <FormSelectOption />
       </StyledForm>
     </Container>
   );
