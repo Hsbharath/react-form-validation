@@ -36,6 +36,7 @@ const StyledForm = styled.form`
 export default function App() {
   const [onlyText, setOnlyText] = useState("");
   const [email, setEmail] = useState("");
+  const [selectOption, setSelectOption] = useState("");
 
   return (
     <Container>
@@ -56,7 +57,10 @@ export default function App() {
         />
       </StyledForm>
       <StyledForm>
-        <FormSelectOption />
+        <FormSelectOption
+          label="Select an option"
+          setSelectOption={setSelectOption}
+        />
       </StyledForm>
     </Container>
   );
