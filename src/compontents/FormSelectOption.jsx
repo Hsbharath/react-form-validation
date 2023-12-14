@@ -38,7 +38,6 @@ const FormSelectOption = ({ label, setSelectOption }) => {
       setSelectOption(val);
       setErrorMessage("");
     } else {
-      alert("Here");
       setErrorMessage("Select an Option");
     }
   };
