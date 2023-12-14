@@ -58,10 +58,13 @@ export default function App() {
       </StyledForm>
       <StyledForm>
         <FormSelectOption
-          label="Select an option"
+          label="Select gender"
           setSelectOption={setSelectOption}
         />
       </StyledForm>
+      <>
+        {onlyText}, {email}, {selectOption}
+      </>
     </Container>
   );
 }

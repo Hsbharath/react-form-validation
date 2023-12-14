@@ -32,12 +32,12 @@ const FormSelectOption = ({ label, setSelectOption }) => {
   const [value, setValue] = useState("");
 
   const selectedOption = (val) => {
-    alert(val);
     if (val != "") {
       setValue(val);
       setSelectOption(val);
       setErrorMessage("");
     } else {
+      setValue("");
       setErrorMessage("Select an Option");
     }
   };
@@ -52,8 +52,8 @@ const FormSelectOption = ({ label, setSelectOption }) => {
         onChange={(e) => selectedOption(e.target.value)}
       >
         <option value=""></option>
-        <option value="Option A">Option A</option>
-        <option value="Option B">Option B</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
       </Select>
       {errorMessage.length > 0 && <Error>{errorMessage}</Error>}
     </StyledFormInput>
